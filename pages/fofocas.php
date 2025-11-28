@@ -103,7 +103,7 @@
                             Se tem algo que nunca falta em Riverdale, são histórias — e, ultimamente, os corredores da escola estão mais agitados do que...
                         </p>
                     </div>
-                    <!--Card 3-->
+                    Card 3
                      <div class="card">
                         <img src="../assets/anuario 4.png" alt="Anuário">
                         <h3>Anuário 2025: lembranças, segredos e o que as fotos não mostram</h3>
@@ -127,28 +127,6 @@
     </main>
     
     <!--Rodapé da página-->
-    <footer class="footer-fofocas">
-        <nav class="navfooter">
-           
-            <a href="" class="navlink">Fofocas</a>
-            <a href="" class="navlink">Correio Elegante</a>
-            <a href="" class="navlink">Lorem Ipsum</a>
-            <a href="" class="navlink">Lorem Ipsum</a>
-            <a href="" class="navlink">Lorem Ipsum</a>
-            
-             <img src="../assets/logo.png" alt="logo do jornal blue and gold">
-        </nav>
-
-        <div class="info-fofocas">
-            <p class="text-info">
-                O Blue & Gold tem como objetivo dar voz aos alunos da Riverdale High, investigando o que acontece dentro e fora dos corredores da escola. Mais que um jornal, somos um espaço para expor verdades, contar histórias e revelar o que muitos preferem deixar nas sombras.
-            </p>
-
-            <div class="redes-sociais">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </div>
-    </footer>
+    
 </body>
 </html>
