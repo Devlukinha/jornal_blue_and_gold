@@ -8,6 +8,8 @@
     <script src="./src/js/script.js" defer></script>
 </head>
 <body>
-    <h1>Exemplo de git</h1>
+    <h1>Página da Home em PHP</h1>
+    <a href="./pages/fofocas.php">Pagina de fofocas</a>
+    <a href="./pages/correio.html"></a>
 </body>
 </html>

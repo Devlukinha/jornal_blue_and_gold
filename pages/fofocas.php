@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../src/css/fofocas.css">
     <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous" defer></script>
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
@@ -26,10 +28,10 @@
         <div class="home">
             <div class="container-text">
                 <h1 class="title">Fofocas</h1>
-            <div class="sub-title">
-                <h3 class="sub-title-1">da</h3>
-                <h1 class="sub-title-2">Semana</h1>
-            </div>
+                <div class="sub-title">
+                    <h3 class="sub-title-1">da</h3>
+                    <h1 class="sub-title-2">Semana</h1>
+                </div>
             </div>
 
             <button class="btn-postar-fofoca">
@@ -42,8 +44,8 @@
     <main class="container-main">
 
         <h1 class="title-fofocas">
-                Confira as fofocas que estão <span class="span-fofocas">bombando</span> no momento
-            </h1>
+            Confira as fofocas que estão <span class="span-fofocas">bombando</span> no momento
+        </h1>
 
         <!--Container da fofocas onde fica os cards de cada notícia-->
         <section class="container-fofocas">
@@ -54,17 +56,21 @@
                     <!--Card 1-->
                     <div class="card">
                         <img src="../assets/riverdalecorredores 3.png" alt="foto da Riverdale High School">
-                        <h3>Mistério nas Sombras: o que realmente está acontecendo nos corredores da Riverdale High?</h3>
+                        <h3>Mistério nas Sombras: o que realmente está acontecendo nos corredores da Riverdale High?
+                        </h3>
                         <p>
-                            Nos últimos dias, rumores estranhos têm circulado pelos corredores da Riverdale High. Portas que se abrem sozinhas, luzes que piscam...
+                            Nos últimos dias, rumores estranhos têm circulado pelos corredores da Riverdale High. Portas
+                            que se abrem sozinhas, luzes que piscam...
                         </p>
                     </div>
                     <!--Card 2-->
                     <div class="card">
                         <img src="../assets/riverdalecorredores 3.png" alt="foto da Riverdale High School">
-                        <h3>Mistério nas Sombras: o que realmente está acontecendo nos corredores da Riverdale High?</h3>
+                        <h3>Mistério nas Sombras: o que realmente está acontecendo nos corredores da Riverdale High?
+                        </h3>
                         <p>
-                            Nos últimos dias, rumores estranhos têm circulado pelos corredores da Riverdale High. Portas que se abrem sozinhas, luzes que piscam...
+                            Nos últimos dias, rumores estranhos têm circulado pelos corredores da Riverdale High. Portas
+                            que se abrem sozinhas, luzes que piscam...
                         </p>
                     </div>
                     <!--Card 3-->
@@ -72,7 +78,8 @@
                         <img src="../assets/crimescene 4.png" alt="Cena de crime">
                         <h3>Assassinato em Riverdale: o silêncio que ecoa pelos corredores da High</h3>
                         <p>
-                            A tranquilidade — ou o que restava dela — foi quebrada em Riverdale nesta semana. Na madrugada de terça-feira, o corpo...
+                            A tranquilidade — ou o que restava dela — foi quebrada em Riverdale nesta semana. Na
+                            madrugada de terça-feira, o corpo...
                         </p>
                     </div>
                     <!--Card 4-->
@@ -80,53 +87,62 @@
                         <img src="../assets/crimescene 4.png" alt="Cena de crime">
                         <h3>Assassinato em Riverdale: o silêncio que ecoa pelos corredores da High</h3>
                         <p>
-                            A tranquilidade — ou o que restava dela — foi quebrada em Riverdale nesta semana. Na madrugada de terça-feira, o corpo...
+                            A tranquilidade — ou o que restava dela — foi quebrada em Riverdale nesta semana. Na
+                            madrugada de terça-feira, o corpo...
                         </p>
                     </div>
                 </div>
-                
+
                 <!--Cards da segunda coluna-->
                 <div class="cards-fofocas-2">
                     <!--Card 1-->
-                     <div class="card">
+                    <div class="card">
                         <img src="../assets/personagens 3.png" alt="Personagens">
                         <h3>Betty, Archie e Veronica: triângulo, amizade… ou algo mais?</h3>
                         <p>
-                            Se tem algo que nunca falta em Riverdale, são histórias — e, ultimamente, os corredores da escola estão mais agitados do que...
+                            Se tem algo que nunca falta em Riverdale, são histórias — e, ultimamente, os corredores da
+                            escola estão mais agitados do que...
                         </p>
                     </div>
                     <!--Card 2-->
-                     <div class="card">
+                    <div class="card">
                         <img src="../assets/personagens 3.png" alt="Personagens">
                         <h3>Betty, Archie e Veronica: triângulo, amizade… ou algo mais?</h3>
                         <p>
-                            Se tem algo que nunca falta em Riverdale, são histórias — e, ultimamente, os corredores da escola estão mais agitados do que...
+                            Se tem algo que nunca falta em Riverdale, são histórias — e, ultimamente, os corredores da
+                            escola estão mais agitados do que...
                         </p>
                     </div>
                     Card 3
-                     <div class="card">
+                    <div class="card">
                         <img src="../assets/anuario 4.png" alt="Anuário">
                         <h3>Anuário 2025: lembranças, segredos e o que as fotos não mostram</h3>
                         <p>
-                            Chegou a época mais aguardada — e temida — do ano: o lançamento do anuário da Riverdale High. Sorrisos ensaiados, frases...
+                            Chegou a época mais aguardada — e temida — do ano: o lançamento do anuário da Riverdale
+                            High. Sorrisos ensaiados, frases...
                         </p>
                     </div>
                     <!--Card 4-->
-                     <div class="card">
+                    <div class="card">
                         <img src="../assets/anuario 4.png" alt="Anuário">
                         <h3>Anuário 2025: lembranças, segredos e o que as fotos não mostram</h3>
                         <p>
-                            Chegou a época mais aguardada — e temida — do ano: o lançamento do anuário da Riverdale High. Sorrisos ensaiados, frases...
+                            php Chegou a época mais aguardada — e temida — do ano: o lançamento do anuário da Riverdale
+                            High. Sorrisos ensaiados, frases...
                         </p>
                     </div>
-            </div>
+                </div>
 
 
             </div>
         </section>
     </main>
-    
+
     <!--Rodapé da página-->
-    
+    <?php 
+        include_once - "php/Components/footer.php"
+    ?>
+
 </body>
+
 </html>
