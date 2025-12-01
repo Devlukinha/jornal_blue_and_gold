@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal Blue and Gold</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <script src="./src/js/script.js" defer></script>
+    <title>Document</title>
 </head>
+
 <body>
-    <h1>Página da Home em PHP</h1>
-    <a href="./pages/fofocas.php">Pagina de fofocas</a>
-    <a href="./pages/correio.html"></a>
+    <a href="./Views/cadastroForm.php">Cadastrar user</a>
+    <a href="./Views/loginForm.php">Logar user</a>
+    <a href="./Public/usuarios.php">Ver usuarios</a>
+    <a href="./Public/cadastrarFofoca.php">Cadastrar fofoca</a>
+    <a href="./Views/fofocas.php">Ver fofocas</a>
 </body>
+
 </html>
