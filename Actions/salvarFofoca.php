@@ -37,10 +37,11 @@
     //salvar fofoca 
     if($controller->cadastrarFofoca($user_id, $titulo, $mensagem, $imagemNome)){
         
-        echo "Fofoca cadastrada com sucesso!";
+         header("Location: ../Views/fofocas.php?msg=success");
     }
     else {
-        echo "Erro ao publicar";
+        header("Location: ../Views/fofocas.php?msg=error");
+
     }
     
 ?>

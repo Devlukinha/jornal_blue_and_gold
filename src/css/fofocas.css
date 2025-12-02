@@ -131,6 +131,8 @@ body{
     transition: 0.5s;
 }
 
+
+
 .btn-postar-fofoca:hover{
     background-color: var(--blueviolet);
     scale: 0.9;
@@ -139,7 +141,132 @@ body{
 
 .btn-postar-fofoca i {
     transform: rotate(270deg);
-    margin-left: 30px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+/*modal*/
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur;
+    backdrop-filter: blur(5px);
+}
+
+.formFofocas {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    height: 650px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-modal{
+    background-image: url("../../assets/photo-fofocas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#fecharModal {
+    background-color: transparent;
+    border: 5px solid var(--blueviolet);
+    color: var(--blueviolet);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-family: "inter";
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+#fecharModal:hover{
+    background-color: var(--blueviolet);
+    color: var(--white);
+}
+
+.campos {
+    margin: 3rem 0 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    width: 670px;
+    font-family: "Inter";
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--blueviolet);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;;
+}
+
+.campos input {
+    width: 270px;
+    height: 40px;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.titulo-cp input {
+    border: 3px solid var(--yellow);
+     width: 300px;
+     padding: 0 0 0 1rem;
+}
+
+.campos input, textarea {
+    outline: none;
+    font-family: "Inter";
+    font-weight: 600;
+}
+
+.campos textarea {
+    width: 360px;
+    height: 200px;
+      padding: 1rem;
+    resize: none;
+    border-radius: 10px;
+    border: 3px solid var(--yellow);
+}
+
+.enviar-fofoca {
+    background-color: var(--yellow);
+    border: none;
+    color: var(--blueviolet);
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-family: "inter";
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+.enviar-fofoca:hover{
+    background-color: var(--blueviolet);
+    color: var(--yellow);
+    scale: 0.9;
 }
 
 
@@ -162,19 +289,22 @@ body{
     color: var(--blueviolet);
 }
 
+
+
 .container-cards-fofocas {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    flex-wrap: wrap;         
+    gap: 20px;                
+    max-width: 1200px;        
+    margin: 0 auto;
     color: var(--white);
     font-family: "Inter";
-    margin-top: 3rem;
 }
 
-
 .card {
-    width: 500px;
+    flex: 0 0 calc(50% - 20px);
+    box-sizing: border-box;
+    width: calc(50% - 10px);
     height: 400px;
     cursor: pointer;
     margin-top: 2rem;
@@ -189,6 +319,7 @@ body{
 
 .card img {
     width: 100%;
+    height: 250px;
     border-radius: 20px;
 }
 

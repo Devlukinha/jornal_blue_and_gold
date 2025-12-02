@@ -26,7 +26,10 @@ CREATE TABLE fofocas (
 CREATE TABLE correio_elegante (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
+    destinatario_id INT NOT NULL,
     mensagem TEXT NOT NULL,
     criado_em DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id)
-) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (destinatario_id) REFERENCES users(id)
+);
+

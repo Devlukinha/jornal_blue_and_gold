@@ -17,26 +17,23 @@
 
             return $this->conexao->executar($comandoSQL, [
             ':user_id' => $user_id,
-            'titulo' => $titulo,
+            ':titulo' => $titulo,
             ':mensagem' => $mensagem,
             ':imagem' => $imagem
             ]);
         }
 
         public function listarTodos() {
-    $sql = "
-        SELECT f.id, f.titulo, f.mensagem, f.imagem, f.criado_em, u.nome AS autor
-        FROM fofocas f
-        JOIN users u ON f.user_id = u.id
-        ORDER BY f.criado_em DESC
-    ";
-    $result = $this->conexao->executar($sql);
-    if ($result === false) {
-        // exibe o erro do PDO para debug
-        die("Erro ao listar fofocas");
-    }
-    return $result;
-}
+            $sql = " SELECT id, titulo, mensagem, imagem, criado_em
+            FROM fofocas
+            ORDER BY criado_em DESC ";
+            
+            $pdo = $this->conexao->conectar();
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute();
+             
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
 
     }
 

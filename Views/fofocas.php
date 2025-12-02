@@ -15,17 +15,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fofocas Da Semana - Jornal Blue and Gold</title>
-    <link rel="stylesheet" href="../src/css/fofocas.css">
+    <link rel="stylesheet" href="../src/css/fofocas.css?=v1.0">
+    <script src="../src/js/modalFofoca.js" defer></script>
     <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
+    <?php if(isset($_GET['msg'])): ?>
+    <script>
+    <?php if($_GET['msg'] == 'success'): ?>
+    alert("Fofoca publicada com sucesso!");
+    <?php else: ?>
+    alert("Erro ao publicar fofoca!");
+    <?php endif;?>
+    </script>
+    <?php endif;?>
+
     <header class="header">
         <nav class="navbar">
             <img src="../assets/logo.png" alt="logo do jornal blue and gold">
             <div class="navlinks">
                 <a href="" class="navlink">Fofocas</a>
-                <a href="" class="navlink">Correio Elegante</a>
+                <a href="../Views/correio.php" class="navlink" target="_blank">Correio Elegante</a>
                 <a href="" class="navlink">Lorem Ipsum</a>
                 <a href="" class="navlink">Lorem Ipsum</a>
                 <a href="" class="navlink">Lorem Ipsum</a>
@@ -44,10 +55,42 @@
                 </div>
             </div>
 
-            <button class="btn-postar-fofoca">
+            <button class="btn-postar-fofoca" id="abrirModal">
                 Poste a sua
                 <i class="fa-solid fa-arrow-down"></i>
             </button>
+
+            <div id="modalFofoca" class="modal">
+
+
+                <form method="POST" action="../Actions/salvarFofoca.php" enctype="multipart/form-data"
+                    class="formFofocas">
+
+                    <div class="image-modal">
+                        <button id="fecharModal"><i class="fa-solid fa-x"></i></button>
+                    </div>
+
+                    <div class="campos">
+
+                        <div class="campo titulo-cp">
+                            <label for="titulo">Titulo</label>
+                            <input type="text" name="campo-titulo" required id="titulo">
+                        </div>
+
+                        <div class="campo">
+                            <label for="imagem">Imagem</label>
+                            <input type="file" name="campo-imagem" required id="imagem">
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensagem">Texto</label>
+                            <textarea name="campo-mensagem" id="mensagem" required></textarea>
+                        </div>
+
+                        <button type="submit" class="enviar-fofoca">Enviar sua fofoca</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
 
@@ -59,38 +102,34 @@
 
         <!--Container da fofocas onde fica os cards de cada notícia-->
         <section class="container-fofocas">
+
             <div class="container-cards-fofocas">
-                <div class="cards-fofocas-1">
-                    <?php if ($fofocas && is_array($fofocas) && count($fofocas) > 0): ?>
 
-                    <?php foreach ($fofocas as $f): ?>
 
-                    <div class="card">
-                        <?php if (!empty($f['imagem'])): ?>
-                        <img src="/jornal_blue_and_gold/Public/uploads/<?= htmlspecialchars($f['imagem']) ?>"
-                            alt="Imagem da fofoca">
+                <?php foreach ($fofocas as $f): ?>
 
-                        <?php endif; ?>
+                <div class="card">
+                    <?php if (!empty($f['imagem'])): ?>
+                    <img src="../Public/uploads/<?= htmlspecialchars($f['imagem']) ?>" alt="Imagem da fofoca">
 
-                        <h3><?= htmlspecialchars($f['titulo']) ?></h3>
-
-                        <p><?= htmlspecialchars($f['mensagem']) ?></p>
-
-                        <small>Por: <?= htmlspecialchars($f['autor']) ?> | <?= $f['criado_em'] ?></small>
-                    </div>
-
-                    <?php endforeach; ?>
-                    <?php else: ?>
-                    <p>Nenhuma fofoca encontrada.</p>
                     <?php endif; ?>
+
+                    <h3><?= htmlspecialchars($f['titulo']) ?></h3>
+
+                    <p><?= htmlspecialchars($f['mensagem']) ?></p>
+
+                    <small>Postado em: <?= $f['criado_em'] ?></small>
                 </div>
+
+                <?php endforeach; ?>
+
             </div>
         </section>
     </main>
 
     <!--Rodapé da página-->
     <?php 
-        include_once - "php/Components/footer.php"
+        require_once __DIR__ .  "/../Components/footer.php";
     ?>
 
 </body>
