@@ -20,10 +20,10 @@
             $sucesso = $this->userModel->criarUsuario($nome, $email, $senha);
             
             if($sucesso) {
-                return "Cadastro realizado com sucesso!";
+                header("Location: ../index.php?msg=success");
             }
             else {
-                return "Erro ao cadastrar usuário!";
+                 header("Location: ../index.php?msg=error");
             }
         }
 
