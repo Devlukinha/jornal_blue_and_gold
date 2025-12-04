@@ -9,9 +9,9 @@
         $senha = $_POST['campo-senha'];
 
     if ($controller->loginUsuario($email, $senha)) {
-        header("Location: ../index.php?msg=success");
+         header("Location: ../Views/loginForm.php?msg=success");
     } else {
-        header("Location: ../index.php?msg=error");
+         header("Location: ../Views/loginForm.php?msg=error");
     }
     }
 ?>
