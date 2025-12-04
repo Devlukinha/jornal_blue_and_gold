@@ -23,7 +23,7 @@
                 header("Location: ../index.php?msg=success");
             }
             else {
-                 header("Location: ../index.php?msg=error");
+                header("Location: ../Views/cadastroForm.php?msg=error");
             }
         }
 
