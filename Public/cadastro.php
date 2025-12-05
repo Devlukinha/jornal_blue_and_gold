@@ -11,7 +11,8 @@
         $senha = $_POST['campo-senha'];
 
         $mensagem = $controller->cadastrarUsuario($nome, $email, $senha);
-        echo $mensagem;
+        $controller->cadastrarUsuario($nome, $email, $senha);
+        exit;
     }
 
 ?>
