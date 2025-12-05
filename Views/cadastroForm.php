@@ -7,8 +7,19 @@
     <title>Cadastro do Usuário</title>
     <link rel="stylesheet" href="../src/css/cadastro.css?v=1.0">
 </head>
+<?php if (isset($_GET['msg']) && $_GET['msg'] === 'success'): ?>
+<script>
+    alert("Conta criada com sucesso! Faça login.");
+</script>
+<?php endif; ?>
 
+<?php if (isset($_GET['msg']) && $_GET['msg'] === 'error'): ?>
+<script>
+    alert("Erro ao criar conta!");
+</script>
+<?php endif; ?>
 <body>
+
     <div class="container-main">
         <div class="form-cadastro">
             <img src="../assets/logo-2.png" alt="" width="300px">
