@@ -37,10 +37,8 @@
             <div class="navlinks">
                 <a href="" class="navlink">Fofocas</a>
                 <a href="../Views/correio.php" class="navlink" target="_blank">Correio Elegante</a>
-                <a href="" class="navlink">Lorem Ipsum</a>
-                <a href="" class="navlink">Lorem Ipsum</a>
-                <a href="" class="navlink">Lorem Ipsum</a>
-
+                <a href="../index.php" class="navlink">Home</a>
+            
                 <button class="btn-login">Login</button>
             </div>
         </nav>
