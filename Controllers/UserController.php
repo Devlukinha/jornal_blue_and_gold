@@ -20,10 +20,12 @@
             $sucesso = $this->userModel->criarUsuario($nome, $email, $senha);
             
             if($sucesso) {
-                header("Location: ../index.php?msg=success");
+                header("Location: ../Views/cadastroForm.php?msg=success");
+                exit;
             }
             else {
                 header("Location: ../Views/cadastroForm.php?msg=error");
+                exit;
             }
         }
 
@@ -51,6 +53,7 @@
 
         // encerrar sessao 
         public function encerrarSessao() {
+            session_unset();
             session_destroy();
         }
     }
